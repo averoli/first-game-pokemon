@@ -1,9 +1,9 @@
 import s from './Layout.module.css';
 
 
-const Layout = ({ id, title, descr, urlBg, colorBg }) => {
+const Layout = ({ id, title, descr, urlBg, colorBg}) => {
 
-    const styleBackground = urlBg ?  {backgroundImage: `url(${urlBg})`} : {backgroundColor: "#D0FF4F"}
+    const styleBackground = urlBg ?  {backgroundImage: `url(${urlBg})`} : {backgroundColor: colorBg}
 
     return(
             <section className={s.root}

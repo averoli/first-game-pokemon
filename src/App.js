@@ -179,7 +179,14 @@ const App = () => {
                 colorBg = "lightpink"
             >
               <div className="flex">
-                {Pokemons.map(pokemon => <PokemonCard  { ...pokemon} />)}
+                {Pokemons.map(pokemon => <PokemonCard
+                    key = {pokemon.id}
+                    type = {pokemon.type}
+                    values = {pokemon.values}
+                    id = {pokemon.id}
+                    name = {pokemon.name}
+                    img = {pokemon.img}
+                />)}
               </div>
             </Layout>
 

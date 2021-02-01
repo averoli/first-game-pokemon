@@ -1,7 +1,7 @@
 import s from './Layout.module.css';
 
 
-const Layout = ({ id, title, descr, urlBg, colorBg}) => {
+const Layout = ({ id, title, urlBg, colorBg, children}) => {
 
     const styleBackground = urlBg ?  {backgroundImage: `url(${urlBg})`} : {backgroundColor: colorBg}
 
@@ -19,7 +19,7 @@ const Layout = ({ id, title, descr, urlBg, colorBg}) => {
                         </div>
                         <div className={`${s.desc} ${s.full}`}>
                             <p>
-                                { descr }
+                                { children }
                             </p>
                         </div>
                     </article>

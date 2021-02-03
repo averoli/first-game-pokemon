@@ -1,3 +1,5 @@
+import cn from 'classnames';
+
 import s from './Layout.module.css';
 
 
@@ -17,7 +19,7 @@ const Layout = ({ id, title, urlBg, colorBg, children}) => {
                             </h3>
                             <span className={s.separator}></span>
                         </div>
-                        <div className={`${s.desc} ${s.full}`}>
+                        <div className={cn(s.desc, s.full)} id = "contact">
                             <p>
                                 { children }
                             </p>

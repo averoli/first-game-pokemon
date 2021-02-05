@@ -1,11 +1,21 @@
+import {useState} from "react";
+
 import Navbar from "./Navbar";
 import Menu from "./Menu";
 
-const MenuHeader = () => {
+
+const MenuHeader = ({ bgActive }) => {
+
+    const[openMenu, setOpenMenu] = useState(null);
+
+    const handleClickMenu = () =>{
+        setOpenMenu(prevState => !prevState);
+    }
+
     return(
         <>
-        <Navbar />
-        <Menu />
+            <Navbar openMenu={openMenu} bgActive={bgActive} onClickMenu={handleClickMenu}/>
+            <Menu openMenu={openMenu}/>
         </>
     );
 }

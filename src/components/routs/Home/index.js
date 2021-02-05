@@ -8,6 +8,7 @@ import PokemonCard from "../../pokemonCards/PokemonCard";
 import MenuHeader from "../../menuHeader/MenuHeader";
 
 
+
 const Pokemons =
     [
         {

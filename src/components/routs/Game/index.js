@@ -1,3 +1,4 @@
+
 const GamePage = ({onChangePage}) => {
 
     const handleClick = () =>{

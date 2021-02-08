@@ -3,6 +3,6 @@
   padding: 96px 32px 24px;
 }
 
-.wrap isHome{
+.wrap.isHome{
   padding: 0;
 }

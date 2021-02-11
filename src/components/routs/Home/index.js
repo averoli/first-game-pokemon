@@ -9,7 +9,7 @@ import MenuHeader from "../../menuHeader/MenuHeader";
 
 
 
-const Pokemons =
+export const Pokemons =
     [
         {
             "abilities": [
@@ -185,16 +185,7 @@ onChangePage && onChangePage(page);
                 title = "This is 2 Layout"
                 colorBg = "lightpink"
             >
-                <div className={s.flex}>
-                    {Pokemons.map(pokemon => <PokemonCard
-                        key = {pokemon.id}
-                        type = {pokemon.type}
-                        values = {pokemon.values}
-                        id = {pokemon.id}
-                        name = {pokemon.name}
-                        img = {pokemon.img}
-                    />)}
-                </div>
+
             </Layout>
 
             <Layout
@@ -203,7 +194,7 @@ onChangePage && onChangePage(page);
                 descr = "This is Description of Layout 3!"
                 urlBg = {layoutBg3}
             />
-            <Footer />
+
         </>
     )
 }

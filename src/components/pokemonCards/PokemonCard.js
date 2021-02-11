@@ -6,7 +6,7 @@ import cardBacked from './assets/card-back-side.jpg';
 
 
 
-const PokemonCard = ({ type, values, id, name, img}) => {
+const PokemonCard = ({ type, values, id, name, img }) => {
 
     const [isActive, setActive] = useState(false);
 

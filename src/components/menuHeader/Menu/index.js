@@ -25,6 +25,9 @@ const MENU = [
 
 const Menu = ({ openMenu, onClickMenu }) =>{
 
+console.log('####: openMenu', openMenu)
+    console.log('####: onClickMenu', onClickMenu);
+    console.log()
     const handleClickClose = () => {
         onClickMenu && onClickMenu(true);
     }
